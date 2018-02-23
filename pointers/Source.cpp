@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <iostream>
+#include <time.h>
 using namespace std;
 
 
@@ -62,7 +63,9 @@ using namespace std;
 
 //example 4
 int main() {
-	int* p = (int*)malloc(20 * sizeof(int));
+	srand(time(NULL));
+	int* p = (int*)calloc(20,sizeof(int));
+	int* q = (int*)malloc(20*sizeof(int))
 	for (int i = 0; i < 10; i++) {
 		cout << p << endl;
 	}
@@ -72,3 +75,5 @@ int main() {
 	system("pause");
 	return 0;
 }
+
+
