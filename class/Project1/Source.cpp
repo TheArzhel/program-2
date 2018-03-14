@@ -59,57 +59,58 @@ using namespace std;
 //	return 0;
 //}
 
-class clock {
-private:
-	unsigned short int h, m, s;
-public:
-	clock() : h(0), m(0), s(0) {}
-	//pixel(unsigned char r_, unsigned char g_, unsigned char b_) :
-		//		r(r_), g(g_), b(b_) {}
+//class clock {
+//private:
+//	unsigned short int h, m, s;
+//public:
+//	clock() : h(0), m(0), s(0) {}
+//	//pixel(unsigned char r_, unsigned char g_, unsigned char b_) :
+//		//		r(r_), g(g_), b(b_) {}
+//
+//
+//	unsigned short int hours() const { return h; }
+//	unsigned short int minutes() const { return m; }
+//	unsigned short int seconds() const { return s; }
+//
+//	void same(const clock &p) const {
+//		if (h == p.h && m == p.m && s == p.s) {
+//			cout << "are the same" << endl;
+//		} else if (h << p.h || m << p.m || s << p.s) {
+//			cout << "firste clock is minor" << endl;
+//		} else if (h >> p.h || m >> p.m || s >> p.s) {
+//			cout << "firste clock is minor" << endl;
+//		}
+//	}
+//
+//	void setHours(unsigned short int h_, unsigned short int m_, unsigned short s_) {
+//		p.h(h_);
+//		p.m(m_); 
+//		p.s(s_);
+//	}
+//
+//	void printHour() const {
+//		cout << h << ":" << m << ":" << s << endl;
+//
+//	}
+//
+//
+//
+//};
+//
+//int main() {
+//	clock first( 11, 30, 50), second;
+//	clock third(11, 30, 50), fourth(12, 0, 0);
+//
+//	cout << first.hours() << " " << first.minutes() << " " << first.seconds()<< endl;
+//	
+//	first.same(second);
+//	first.same(third);
+//	first.same(forth);
+//
+//	second.setHours(5, 45, 23);
+//	second.printHour();
+//
+//	system("pause");
+//	return 0;
+//}
 
-
-	unsigned short int hours() const { return h; }
-	unsigned short int minutes() const { return m; }
-	unsigned short int seconds() const { return s; }
-
-	void same(const clock &p) const {
-		if (h == p.h && m == p.m && s == p.s) {
-			cout << "are the same" << endl;
-		} else if (h << p.h || m << p.m || s << p.s) {
-			cout << "firste clock is minor" << endl;
-		} else if (h >> p.h || m >> p.m || s >> p.s) {
-			cout << "firste clock is minor" << endl;
-		}
-	}
-
-	void setHours(unsigned short int h_, unsigned short int m_, unsigned short s_) {
-		p.h(h_);
-		p.m(m_); 
-		p.s(s_);
-	}
-
-	void printHour() const {
-		cout << h << ":" << m << ":" << s << endl;
-
-	}
-
-
-
-};
-
-int main() {
-	clock first( 11, 30, 50), second;
-	clock third(11, 30, 50), fourth(12, 0, 0);
-
-	cout << first.hours() << " " << first.minutes() << " " << first.seconds()<< endl;
-	
-	first.same(second);
-	first.same(third);
-	first.same(forth);
-
-	second.setHours(5, 45, 23);
-	second.printHour();
-
-	system("pause");
-	return 0;
-}
