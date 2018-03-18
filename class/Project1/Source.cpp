@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 //class pixel {
@@ -59,58 +60,115 @@ using namespace std;
 //	return 0;
 //}
 
-//class clock {
+//class clock 
+//{
 //private:
-//	unsigned short int h, m, s;
+//	int hours, min, sec;
 //public:
-//	clock() : h(0), m(0), s(0) {}
-//	//pixel(unsigned char r_, unsigned char g_, unsigned char b_) :
-//		//		r(r_), g(g_), b(b_) {}
+//	clock() : hours(0), min(0), sec(0) {}
+//	clock(int h_, int m_, int s_) : hours(h_), min(m_), sec(s_) {}
+//  ~clock() {}; 
+//public :
 //
+//	int returnhours() const { return hours; }
+//	int returnmin() const { return min; }
+//	int returnsec() const { return sec; }
 //
-//	unsigned short int hours() const { return h; }
-//	unsigned short int minutes() const { return m; }
-//	unsigned short int seconds() const { return s; }
-//
-//	void same(const clock &p) const {
-//		if (h == p.h && m == p.m && s == p.s) {
-//			cout << "are the same" << endl;
-//		} else if (h << p.h || m << p.m || s << p.s) {
-//			cout << "firste clock is minor" << endl;
-//		} else if (h >> p.h || m >> p.m || s >> p.s) {
-//			cout << "firste clock is minor" << endl;
+//	void sameclock(const clock &clock2) {
+//		if (hours == clock2.hours && min== clock2.min && sec == clock2.sec)
+//		{
+//			cout << "both clocks are the same" << endl;
+//		}
+//		else if ( hours < clock2.hours || hours == clock2.hours && min < clock2.min || hours == clock2.hours && min == clock2.min && sec < clock2.sec)
+//		{
+//			cout << " clock 2 is greater" << endl;
+//		}
+//		else if (hours > clock2.hours || hours == clock2.hours && min > clock2.min || hours == clock2.hours && min == clock2.min && sec > clock2.sec)
+//		{
+//			cout << " clock 1 is greater" << endl;
 //		}
 //	}
-//
-//	void setHours(unsigned short int h_, unsigned short int m_, unsigned short s_) {
-//		p.h(h_);
-//		p.m(m_); 
-//		p.s(s_);
+//	void setHours(int hours_, int min_, int sec_) {
+//		hours = hours_; 
+//		min = min_;
+//		sec=sec_;
 //	}
 //
-//	void printHour() const {
-//		cout << h << ":" << m << ":" << s << endl;
-//
+//	void printHours() {
+//		cout << hours << ":" << min << ":" << sec << endl;
 //	}
-//
-//
 //
 //};
 //
 //int main() {
-//	clock first( 11, 30, 50), second;
-//	clock third(11, 30, 50), fourth(12, 0, 0);
 //
-//	cout << first.hours() << " " << first.minutes() << " " << first.seconds()<< endl;
-//	
-//	first.same(second);
-//	first.same(third);
-//	first.same(forth);
+//	clock clock1, clock2(12, 30, 5), clock3(12, 30, 4), clock4(11, 40, 50), clock5(12, 50, 30);
+//	cout << (int)clock2.returnhours() << ":" << (int)clock2.returnmin()  <<":" << (int)clock2.returnsec() << endl;
+//	clock1.sameclock(clock2);
+//	clock2.sameclock(clock2);
+//	clock2.sameclock(clock3);
+//	clock2.sameclock(clock4);
+//	clock2.sameclock(clock5);
 //
-//	second.setHours(5, 45, 23);
-//	second.printHour();
-//
+//	clock1.setHours(24, 59, 59);
+//	clock1.printHours();
 //	system("pause");
 //	return 0;
 //}
 
+class Matricula
+{
+private:
+	int number;
+	char* strings;
+public:
+	Matricula() : number(9999), strings("ZZZZ") {}
+	Matricula(int numb, char* str) : number(numb), strings(str) {}
+	~Matricula() {};
+public:
+	char* to_string () {
+		
+
+		return z;
+	}
+
+	bool is_equal(Matricula &m) {
+		bool q = false;
+		if (number == m.number && strings == m.string) {	
+			q = true;
+		}
+		return q;
+
+	}
+
+};
+
+int main() {
+	Matricula m1(1234, "ABC"), m2(5588, "KXM");
+
+	Matricula m3(m1), m4;
+
+	char* s = m4.to_string(); 
+
+	cout << "m4 val: " << s << endl;
+
+	cout << "m2 val: " << m2.to_string() << endl;
+
+	cout << "m1 is equal to m3?? ";
+
+	if (m1.is_equal(m3)) {
+
+		cout << "yes" << endl;
+	}
+	else {
+		cout << "no" << endl;
+	}
+	cout << "Finished" << endl;
+
+	system("pause");
+	return 0;
+}
+//Produces the following output :
+//m4 val : 9999 - ZZZ
+//m2 val : 5588 - KXM
+//m1 is equal to m3 ? ? yes
