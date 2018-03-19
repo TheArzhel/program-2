@@ -1,0 +1,6 @@
+﻿  Source.cpp
+c:\users\andres\documents\github\program-2\polymorphism\polymorphism\source.cpp(29): warning C4244: '*=': conversion from 'double' to 'int', possible loss of data
+c:\users\andres\documents\github\program-2\polymorphism\polymorphism\source.cpp(50): warning C4244: '*=': conversion from 'double' to 'int', possible loss of data
+c:\users\andres\documents\github\program-2\polymorphism\polymorphism\source.cpp(71): warning C4244: '*=': conversion from 'double' to 'int', possible loss of data
+c:\users\andres\documents\github\program-2\polymorphism\polymorphism\source.cpp(92): warning C4244: '*=': conversion from 'double' to 'int', possible loss of data
+  Polymorphism.vcxproj -> C:\Users\Andres\Documents\GitHub\program-2\Polymorphism\Debug\Polymorphism.exe
