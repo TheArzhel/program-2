@@ -62,18 +62,26 @@ using namespace std;
 //}
 
 //example 4
+//int main() {
+//	srand(time(NULL));
+//	int* p = (int*)calloc(20,sizeof(int));
+//	int* q = (int*)malloc(20*sizeof(int))
+//	for (int i = 0; i < 10; i++) {
+//		cout << p << endl;
+//	}
+//
+//
+//
+//	system("pause");
+//	return 0;
+//}
+//
 int main() {
-	srand(time(NULL));
-	int* p = (int*)calloc(20,sizeof(int));
-	int* q = (int*)malloc(20*sizeof(int))
-	for (int i = 0; i < 10; i++) {
-		cout << p << endl;
-	}
 
+int vec[3] = { 1, 2, 3 };
+cout << &vec[] << endl;
+system("pause");
+return 0;
 
-
-	system("pause");
-	return 0;
 }
-
 
