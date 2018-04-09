@@ -87,7 +87,7 @@ public:  // Ctor. and Dtor.
 			}
 		}
 	}
-	int  dequeue() 
+	void  dequeue() 
 	{
 		if (_back != _front) // vacio
 		{
@@ -98,6 +98,7 @@ public:  // Ctor. and Dtor.
 			{
 				_back = -1;
 			}
+			
 		}
 	}
 		 // Getters  
@@ -145,6 +146,30 @@ int main() {
 
 	cout << " isu is empty? " << ok.empty() << endl;
 	*/
+
+	Queue ok;
+
+	for (int i = 1; i < SIZE+1; ++i) {
+	ok.enqueue(i);
+	}
+
+	cout << "size is " << ok.size() << endl;
+
+	ok.dequeue();
+	ok.dequeue();
+
+	cout << "size is " << ok.size() << endl;
+
+	ok.dequeue();
+	ok.dequeue();
+	ok.dequeue();
+
+	cout << " isu is empty? " << ok.empty() << endl;
+
+	ok.dequeue();
+
+	cout << " isu is empty? " << ok.empty() << endl;
+	
 	system("pause");
 	return 0;
 }
