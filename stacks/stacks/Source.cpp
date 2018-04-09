@@ -76,16 +76,29 @@ public:  // Ctor. and Dtor.
 	// Modifiers  
 	void enqueue(int value) 
 	{
-		_array[_back+1] = value;
-		_back++;
-		if (_back >= SIZE)
-		{
-			_back = -1;
+		if (_back - _front != SIZE) 
+		{//not full 
+			_array[_back + 1] = value;
+			_back++;
+
+			if (_back == SIZE - 1 /*&& not full*/)
+			{
+				_back = -1;
+			}
 		}
 	}
 	int  dequeue() 
 	{
-		
+		if (_back != _front) // vacio
+		{
+			_array[_front + 1] = 0;
+			_front++;
+
+			if (_back == SIZE - 1)
+			{
+				_back = -1;
+			}
+		}
 	}
 		 // Getters  
 	int size() const 
