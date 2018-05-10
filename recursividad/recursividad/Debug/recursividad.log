@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\andressp2\source\repos\recursividad\recursividad\source.cpp(23): warning C4018: '<': signed/unsigned mismatch
+c:\users\andressp2\source\repos\recursividad\recursividad\source.cpp(44): warning C4018: '<': signed/unsigned mismatch
+c:\users\andressp2\source\repos\recursividad\recursividad\source.cpp(66): warning C4018: '<': signed/unsigned mismatch
+  recursividad.vcxproj -> C:\Users\andressp2\source\repos\recursividad\Debug\recursividad.exe
